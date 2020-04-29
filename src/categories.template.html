@@ -1,0 +1,8 @@
+<ul>
+  <li ng-repeat="item in $ctrl.items"
+      ui-sref="itemDetail({itemShortName: item.short_name})"> 
+      <!-- Item parameter in this case is item.short_name from categories.json  -->
+      <!-- Send this as function to itemDetail -->
+       <b>{{ item.short_name }} - </b>{{ item.name }}
+  </li>
+</ul>
